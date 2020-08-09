@@ -1,0 +1,32 @@
+# https://cs.anu.edu.au/courses/comp1720/resources/faq/#statement-of-originality
+
+# put *your* name and uid here
+name: Yanlong LI
+uid: u5890571
+
+declaration: >-
+  I declare that everything I have submitted in this assignment is entirely my
+  own work, with the following exceptions:
+
+# add as many "url+licence+comment" entries as necessary
+# (or remove it altogether if you haven't used any external assets)
+assets:
+  - comment: the icon of eraser
+    url: https://iconmonstr.com/eraser-1-png/
+    licence: https://iconmonstr.com/license/
+
+  - comment: the brush icon
+    url: https://www.shareicon.net/paintbrush-tools-and-utensils-repair-paint-brush-construction-painter-754355
+    licence: Flaticon Basic License
+
+  - comment: the flappy disk icon for save
+    url: http://www.myiconfinder.com/icon/data-disk-diskette-download-floppy-floppy-disk-save-saving-storage-pc-system/6584
+    licence: Free for commercial use
+
+  - comment: the trash bin icon
+    url: http://www.myiconfinder.com/icon/trash-can-bin-cancel-close-delete-empty-garbage-recycle-remove/8586#.256
+    licence: Free for commercial use
+
+  - comment: both of door icon
+    url: https://www.iconsdb.com/black-icons/door-8-icon.html
+    licence: not sell

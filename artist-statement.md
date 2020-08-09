@@ -1,0 +1,22 @@
+# Artist Statement
+For the major project which topic is “NEW”. I have chosen to design an all draw board. Firstly, for creators the most important tool is draw board, thus the draw board with more functions and more powerful may help creators to create the new design and express them thought easier. Secondly, to interpreted “NEW” I think to show something new or relate to “new” directly is not enough. As designing a program, I really hope users are able to join in the program deeply and they could make something new by themselves in the program. Thus they also able to feel “NEW” by themselves as well. To highlight the new draw board, I planned to compare the traditional draw board and the new edition draw board in my project.
+
+In my project, I designed the experiencing structure. At the beginning, users will try the traditional draw board. At this step, I hope users who are not creator will realise how easy to show them ideas by drawing or sketching on a blank opened draw board. After that, users click the button entering the new edition. In this step. I hope users will feel to show ideas are easier by using elegant brushes and more powerful draw board. At the end, they are free to swap the new edition and tradition edition. I hope they can feel “NEW” which I had done and also “NEW” which they had done as well.
+
+For this project, I hope the users think the new edition draw board is easier to express them ideas than tradition draw board. And by using the new draw board I hope users will feel they are able to do something “NEW” as well.
+
+At the end. I hope viewers will say they had done something “NEW” by themselves and the feeling about new.
+
+
+At the design part. The basic concept to achieve me draw board
+
+For the traditional draw board, I implemented like simple draw tools on Windows, which has a white background, a line brush able to draw lines on the canvas and an eraser. For change brush’s colour, I had implemented a colour bar with HSB mode and colour range from 0 – 360 on H value. 
+
+For my new edition od draw board. I designed four types of brush: line, triangle, ellipse and rectangle. For each sketch, I had made serval elements with a type of uses. The “line” brush created serval lines by using the mouse. Each line will change from big to small smoothly and then from small to big and repeat. The “triangle” brush created triangles on the mouse’s track. Each triangle is rotating by themselves and also has the orbital revolution with a diameter which is the shortest between the mouse location (mouseX, mouseY) and last mouse location (pmouseX, pmouseY). To calculate that diameter by using the Pythagorean theorem: sqrt((mouseX-pmouseX)*(mouseX-pmouseX)+(mouseY-pmouseY)*(mouseY-pmouseY)). The “ellipse” brush created serval circle. Each circle had the orbital revolution like that triangle. The “rectangle” brush created serval rectangles. Each rectangle had the orbital revolution like that triangle.
+
+The timer is the most variable in the draw board, timer relates to second. Every time the timer plus 1 means 1/60 second. That variable handles all animation is the draw board. Also in the draw board, sketch animated loopy but the timer is always increased 60 by seconds. Thus in all sketch functions, I used the cos and sin, those two mathematics functions have Y value always between 0 and 1 while X value increases or decrease. 
+
+For the ellipse, using the timer to make they movable in the screen. To make they spin around, I had used that cos and sin function and relate to the X axis and Y axis, the X and must use the different function. Because if X and Y use the same function the X and Y value are always same at the same time so the ellipse will only to go award and back on a direction. For each element of ellipses on draw board, I defined two ellipses, one is bigger and one is smaller, that bigger one also has an alpha channel and brighter than smaller one to make the bigger one looks like a shadow of smaller one.
+
+For the line, to make them movable I used the stroke. To change the weight of stroke to make animation. For changing the weight of stroke as a loop, I use the timer variable and cos, sin math function. 
+For triangle and rectangle, I defined one shape and one stroke for each element. Each element’s animation contains orbital revolution and rotation and stroke weight and colour of stroke. To change them dynamically I used the timer as well.
